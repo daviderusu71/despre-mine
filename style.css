@@ -1,0 +1,296 @@
+/* Resetare stiluri de bază */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Stilizare pentru corpul paginii */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Stilizare pentru navigație */
+header {
+    background: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Stilizare pentru secțiuni */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Stilizare pentru proiecte */
+.project-item {
+    background: #eee;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Stilizare pentru testimoniale */
+.testimonial-item {
+    font-style: italic;
+    background: #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Stilizare pentru contact */
+#contact p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+/* Ajustare pentru link-uri și text în dark mode */
+.dark-mode a {
+    color: #1e90ff; /* Albastru deschis */
+}
+
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3, 
+.dark-mode h4, 
+.dark-mode h5, 
+.dark-mode h6, 
+.dark-mode p {
+    color: white;
+}
+
+/* Ajustare pentru meniul de navigație */
+.dark-mode nav ul li a {
+    color: white;
+}
+
+/* Ajustare pentru butonul Dark Mode */
+.dark-mode button {
+    background: #444;
+    color: white;
+    border: 1px solid white;
+}
+
+
+.dark-mode section {
+    background: #333;
+    color: white;
+}
+.dark-mode nav ul {
+    background-color: #111;
+}
+
+.dark-mode nav ul li a {
+    color: white;
+}
+
+.dark-mode section {
+    background: #333;
+    color: white;
+}
+
+.dark-mode .project-item {
+    background: #444;
+    color: white;
+}
+
+.dark-mode .testimonial-item {
+    background: #555;
+    color: white;
+}
+
+/* Stilizare pentru meniul mobil */
+.show-menu {
+    display: block !important;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #333;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        padding: 10px;
+        border-bottom: 1px solid #444;
+    }
+}
+
+/* Stilizare formular de contact */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+#contact-form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#contact-form input, 
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Animare pentru apariția secțiunilor */
+section {
+    opacity: 1;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Imagine de profil */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    
+}
+
+/* Imagini pentru proiecte */
+.project-img {
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Imagini pentru testimoniale */
+.testimonial-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+a  {
+    color: #1e90ff;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+/* Stilizare butoane social media */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-media a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.social-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-media img:hover {
+    transform: scale(1.2);
+}
+video {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+iframe {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
